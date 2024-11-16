@@ -1,0 +1,4 @@
+(test
+ (name test_dotenvy)
+ (deps preserving.env overriding.env simple.env)
+ (libraries alcotest dotenvy))
