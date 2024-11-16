@@ -70,6 +70,13 @@
               odoc
             ];
           };
+
+          odoc = pkgs.mkShell {
+            inputsFrom = [ self.packages.${pkgs.system}.default ];
+            buildInputs = with ocamlPackages; [
+              odoc
+            ];
+          };
         }
       );
     };
