@@ -15,5 +15,4 @@
  (depends
   (ocaml (>= 4.08.0))
   (dune (>= 3.16))
-  unix
   (alcotest :with-test)))
