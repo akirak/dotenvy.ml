@@ -4,12 +4,14 @@ on:
   pull_request:
     paths-ignore:
       - .github
+      - 'flake.*'
       - 'README.*'
   push:
     branches:
       - master
     paths-ignore:
       - .github
+      - 'flake.*'
       - 'README.*'
   workflow_dispatch:
 
