@@ -30,10 +30,10 @@ jobs:
 
     steps:
       - name: Checkout tree
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
       - name: Set-up OCaml
-        uses: ocaml/setup-ocaml@v3
+        uses: ocaml/setup-ocaml@41635ce4469ebffde345bae7c35663532ac1a0fc # v3
         with:
           ocaml-compiler: ${{ matrix.ocaml-compiler }}
 
