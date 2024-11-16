@@ -49,8 +49,8 @@
             duneVersion = "3";
             src = self.outPath;
             buildInputs = with ocamlPackages; [ ocaml-syntax-shims ];
-
-            propagatedBuildInputs = with ocamlPackages; [
+            doCheck = true;
+            checkInputs = with ocamlPackages; [
               alcotest
             ];
           };
