@@ -1,6 +1,6 @@
 (lang dune 3.16)
 
-(generate_opam_files false)
+(generate_opam_files true)
 
 (authors "Akira Komamura <akira.komamura@gmail.com>")
 (maintainers "Akira Komamura <akira.komamura@gmail.com>")
