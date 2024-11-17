@@ -2,12 +2,12 @@ name: Generate OCaml documentation
 on:
   pull_request:
     paths:
-      - lib
+      - 'lib/**'
   push:
     branches:
       - master
     paths:
-      - lib
+      - 'lib/**'
   workflow_dispatch:
 jobs:
   build:
