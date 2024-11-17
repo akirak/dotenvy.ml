@@ -10,6 +10,7 @@ It only supports fairly recent versions of the OCaml system. Its API is intended
 to be minimal but flexible enough.
 ## TODO
 - [ ] Add support for UTF-8.
+- [ ] Implement the proper dotenv syntax specification.
 ## Alternatives
 - <https://github.com/thatportugueseguy/ocaml-dotenv>
 - <https://github.com/jordanrmerrick/dotenv>
