@@ -22,18 +22,7 @@
           in
           f {
             inherit pkgs system;
-            ocamlPackages = pkgs.ocaml-ng.ocamlPackages_latest.overrideScope (
-              oself: osuper: {
-                # A temporary fix to prevent build failures.
-                dune_3 = osuper.dune_3.overrideAttrs rec {
-                  version = "3.16.1";
-                  src = pkgs.fetchurl {
-                    url = "https://github.com/ocaml/dune/releases/download/${version}/dune-${version}.tbz";
-                    hash = "sha256-t4GuIPh2E8KhG9BxeAngBHDILWFeFSZPmmTgMwUaw94=";
-                  };
-                };
-              }
-            );
+            ocamlPackages = pkgs.ocaml-ng.ocamlPackages_latest;
           }
         );
     in
