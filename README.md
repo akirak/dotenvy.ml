@@ -1,4 +1,7 @@
 # Dotenvy for OCaml
+**Deprecation Warning: I ended up not working on this project any more. Direnv
+supports .env, which solves 100% of my planned use case for this project.**
+
 Dotenvy is an OCaml library that reads `.env` file and updates the current
 environment.
 
